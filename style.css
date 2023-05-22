@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+    height: 450px;
+    justify-content: center;
+  }
+/*Menu dropdown*/
+  .dropdown {
+    position: relative;
+    display: inline;
+  }
+
+  .cardText{
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .cardReactions{
+    width: 100%;
+  }
+
+  .cardReactions button{
+    position: absolute;
+
+  }
+
+
+/*Menu dropdown button*/
+  .dropbtn {
+    width: 100%;
+    position: absolute;
+    left:  0;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+  }
+/*Menu dropdown content*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1000;
+    background-color: gray;
+    margin-left: -50px;
+  }
+/*Menu dropdown content link*/
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 5px;
+    color: white;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /**/
+  body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  /**/
+  .img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* product title */
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /*product description */
+  .description {
+    margin-bottom: 10px;
+    font-size:xx-large;
+  }
+  
+  /* Style the product price */
+  .product-card .product-price {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* product button */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(248, 243, 243);
+    color: black;
+    text-decoration: none;
+    border-radius: none;
+    border-style: none;
+    margin-top: 30px;
+  }
+  .dropdown .fa-solid {
+    position: absolute;
+    z-index: 1000;
+    margin-left: 120px;
+    color: white;
+    margin-top: 10px;
+  }
+  span{
+    font-size: 20px;
+  }
+
+  .carddescription .fa-solid{
+    color: #000;
+    margin-left: 120px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    /* Adjust width for smaller screens */
+    .product-card {
+      width: 100%;
+    }
+  }
+  
+@media (max-width:1200px) {
+  .product-card{
+    width: 50%;
+  }
+}
+
+
+
+
